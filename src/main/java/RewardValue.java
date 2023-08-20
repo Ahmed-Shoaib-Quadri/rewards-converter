@@ -1,15 +1,17 @@
 public class RewardValue {
-        double cash;
+        double cash;int miles;
         public RewardValue(double cashValue){
             cash=cashValue;
         }
+        public RewardValue(int milesValue){miles=milesValue;}
+
         public double getCashValue()
         {
-         return cash;
+         return miles/0.0035;
         }
         public double getMilesValue()
         {
-          return getCashValue()*0.0035;
+          return cash*0.0035;
         }
 
 
